@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ct_tramo_carreteros",
+  "info": {
+    "name": "ct_tramo_carretero"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "ct_coordinacion_regional": {
+      "via": "ct_tramo_carreteros",
+      "model": "ct-coordinacion-regional"
+    },
+    "reportes": {
+      "via": "ct_tramo_carretero",
+      "collection": "reportes"
+    }
+  }
+}

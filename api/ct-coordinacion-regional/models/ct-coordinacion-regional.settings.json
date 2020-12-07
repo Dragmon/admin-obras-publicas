@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ct_coordinacion_regionals",
+  "info": {
+    "name": "ct_coordinacion_regional",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "ct_tramo_carreteros": {
+      "collection": "ct-tramo-carretero",
+      "via": "ct_coordinacion_regional"
+    },
+    "reportes": {
+      "via": "ct_coordinacion_regional",
+      "collection": "reportes"
+    }
+  }
+}

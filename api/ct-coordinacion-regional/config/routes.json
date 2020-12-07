@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ct-coordinacion-regionals",
+      "handler": "ct-coordinacion-regional.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ct-coordinacion-regionals/count",
+      "handler": "ct-coordinacion-regional.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ct-coordinacion-regionals/:id",
+      "handler": "ct-coordinacion-regional.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ct-coordinacion-regionals",
+      "handler": "ct-coordinacion-regional.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ct-coordinacion-regionals/:id",
+      "handler": "ct-coordinacion-regional.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ct-coordinacion-regionals/:id",
+      "handler": "ct-coordinacion-regional.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

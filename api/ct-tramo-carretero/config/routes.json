@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ct-tramo-carreteros",
+      "handler": "ct-tramo-carretero.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ct-tramo-carreteros/count",
+      "handler": "ct-tramo-carretero.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ct-tramo-carreteros/:id",
+      "handler": "ct-tramo-carretero.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ct-tramo-carreteros",
+      "handler": "ct-tramo-carretero.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ct-tramo-carreteros/:id",
+      "handler": "ct-tramo-carretero.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ct-tramo-carreteros/:id",
+      "handler": "ct-tramo-carretero.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

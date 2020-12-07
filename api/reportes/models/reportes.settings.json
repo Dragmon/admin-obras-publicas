@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reportes",
+  "info": {
+    "name": "reportes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descripcion": {
+      "type": "richtext"
+    },
+    "fecha_inicio": {
+      "type": "date"
+    },
+    "fecha_fin": {
+      "type": "date"
+    },
+    "porcentaje_avance": {
+      "type": "decimal",
+      "max": 100,
+      "min": 1
+    },
+    "Activo": {
+      "type": "boolean"
+    },
+    "ct_tramo_carretero": {
+      "model": "ct-tramo-carretero",
+      "via": "reportes"
+    },
+    "ct_coordinacion_regional": {
+      "model": "ct-coordinacion-regional",
+      "via": "reportes"
+    }
+  }
+}
